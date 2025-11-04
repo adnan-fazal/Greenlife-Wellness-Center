@@ -1,0 +1,422 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+h1, h2 {
+  text-align: center;
+  color:#0aae62;
+  font-style:italic;
+}
+  /* Navbar */
+  .navbar {
+    display: flex;
+    background-color: #a7e7c9;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    position: relative;
+    margin-left: 0;      /* Remove any left margin */
+    padding-left: 0;     /* Remove padding */
+  }
+  .logo span {
+    color: #0aae62;
+  }
+
+  .nav-links a {
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #0aae62;
+  }
+  
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #0aae62;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+
+  .navbar nav ul {
+    font-family:sans-serif;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  .navbar nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  .auth-buttons button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+.login {
+  background-color: #0aae62;
+  color: white;
+}
+
+.login:hover {
+  background-color:black;
+}
+
+  .register {
+    background-color: #0aae62;
+    color: white;
+  }
+
+  .register:hover {
+    background-color:black;
+  }
+
+/*About us designing part*/
+.about-section p {
+  text-align: center;
+}
+
+.about-section h1{
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 40px 0 20px;
+  color: #0aae62;
+}
+
+.about-image {
+  height: 500px;
+  width: 100vw;
+  display: block;
+}
+
+.center-heading {
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 26px;
+  margin: 40px 0 20px;
+  color: #0aae62;
+}
+
+.values-container h2 {
+  font-size: 3rem;
+  margin-top: auto;
+}
+
+.values-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.values-container {
+  padding: 60px 10%;
+  background-color: white;
+  text-align: center;
+}
+
+.values-container {
+  padding: 60px 10%;
+  background-color: white;
+  text-align: center;
+}
+.values-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  position: relative;
+}
+.values-container h3::after {
+  content: '';
+  width: 50px;
+  height: 4px;
+  background: #0aae62;
+  display: block;
+  margin: 10px auto 0;
+}
+
+.value-card {
+  flex: 1;
+  min-width: 220px;
+  max-width: 300px;
+  background-color: #f2fdf7;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background-color: #e2fbed;
+}
+
+.value-card h3 {
+  margin-top: 15px;
+  color: #0aae62;
+}
+.value-card p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+
+.V-section {
+  padding: 60px 20px;
+  background-color: #9fd183;
+  font-family: 'Arial', sans-serif;
+  color: #333333;
+}
+
+.V-text {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.V-text h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  color: #222;
+}
+
+.V-text p {
+  font-size: 20px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.V-text ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.V-text ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+  list-style-type: disc;
+}
+
+/* MEET OUR DOCTORS SECTION */
+
+.meet-doctors-section {
+  padding: 60px 10%;
+  background-color: #f7fdf9;
+  text-align: center;
+}
+
+.center-heading {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #0aae62;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+/* Container for doctors - flexbox row with equal spacing */
+.doctors-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: nowrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Each doctor card */
+.doctor-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.doctor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Circular container for image */
+.doctor-image {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #0aae62;
+  box-shadow: 0 0 15px rgba(10, 170, 98, 0.4);
+}
+
+.doctor-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Doctor's name */
+.doctor-card h3 {
+  margin: 10px 0 6px;
+  color: #0aae62;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* Doctor's specialty */
+.doctor-card p {
+  color: #555;
+  font-size: 1.1rem;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Responsive: Stack vertically on narrow screens */
+@media (max-width: 900px) {
+  .doctors-container {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .doctor-card {
+    width: 90%;
+  }
+}
+
+
+/* Footer */
+
+.social {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.social a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #1c1f2b;
+  color: white;
+  padding: 40px 10%;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+.footer-grid h4 {
+  margin-bottom: 10px;
+}
+.footer-grid ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-grid ul li {
+  margin-bottom: 8px;
+}
+.footer-grid ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+.footer-newsletter input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+.footer-newsletter button {
+  padding: 10px;
+  background-color: #0aae62;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+}
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.footer-bottom a {
+  color: #ccc;
+  margin-left: 15px;
+}
+  
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbar nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .auth-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .contact-wrapper,
+  .testimonial-boxes,
+  .map-box,
+  .footer-grid {
+    flex-direction: column;
+    display: flex !important;
+    align-items: center;
+  }
+
+  .contact-form,
+  .business-hours,
+  .testimonial,
+  .map-info,
+  .image-wrapper img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
